@@ -2,9 +2,9 @@
 Use Amazon EMR to create Hadoop cluster and run mrjob jobs in Python and Pig Latin scripts to explore “UK Car Accidents 2005-2015" dataset. 
 
 ## Environment:
-Environment: Windows(local machine), AWS.
+Windows(local machine), AWS.
 ## Technologies:
-Technologies: Hadoop, EMR, S3, MapReduce, CANOPY, Python 2.7, mrjob, Pig Latin.
+Hadoop, EMR, S3, MapReduce, CANOPY, Python 2.7, mrjob, Pig Latin.
 
 ## Dataset: 
 UK Car Accidents 2005-2015 (Data from the UK Department for Transport).
