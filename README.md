@@ -33,12 +33,15 @@ For further information about the cluster configuration on EMR, you can check mr
 ~~~~
 !python C:\Users\majdi\Desktop\DataSet\MapAccidentsToArea.py -r emr s3a://majdi-bucket/Accidents0515.csv --conf-path  C:\Users\majdi\Desktop\DataSet\mrjob.conf --shp s3a://majdi-bucket/Areas.shp --shx s3a://majdi-bucket/Areas.shx --dbf s3a://majdi-bucket/Areas.dbf --cluster-id j-VA2H37XJUU8O --output-dir=s3://majdi-bucket/output
 ~~~~
-I highlight here the fact that we are using the shapefiles (.shp, .shx and .dbf) to map the car accidents coordinates to the Uk regions.
+**I highlight here the fact that we are using the shapefiles (.shp, .shx and .dbf) to map the car accidents coordinates to the UK regions.**
 
-4. After an almost one hour and half, we get the results.
+4. YOUPI! After an almost one hour and a half, we get the results.
+
 ![](Images/image3.png)
 
-As an output we get something like this.
+As an output we get something like this where we see the area code, the car accident coordinates and the accidents count that occured in these coordinates.
 
 ![](Images/image4.png)
+
+5. 
 
