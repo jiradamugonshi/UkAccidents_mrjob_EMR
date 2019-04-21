@@ -18,8 +18,9 @@ We will create a Hadoop cluster in Amazon EMR using mrjob commands within a loca
 ## Steps
 1. Create a S3 bucket and upload the files into it. For the mrjob script and the configuration file (mrjob.conf), you can keep them in the local machine.
 
-2. Run the following command in your local machine terminal to create the Hadoop cluster in Amazon EMR. You have to run the mrjob command from the directory where did you install mrjob package.
+2. Run the following command in your local machine terminal to create the Hadoop cluster in Amazon EMR. You have to run the mrjob command from the directory where your Python environment lies and the mrjob package is installed. As a response you get your cluster ID freshly created.
 ```
 mrjob create-cluster --max-hours-idle 1 --conf-path C:\Users\majdi\Desktop\DataSet\mrjob.conf 
 ```
+
 
