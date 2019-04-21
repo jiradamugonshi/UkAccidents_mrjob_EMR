@@ -39,7 +39,7 @@ For further information about the cluster configuration on EMR, you can check mr
 
 ![](Images/image3.png)
 
-As an output we get something like this where we see the area code, the car accident coordinates and the accidents count that occured in these coordinates.
+As an output we get something like this where we see the area code, the car accident coordinates (longitude, latitude) and the accidents count that occured in these coordinates.
 
 ![](Images/image4.png)
 
