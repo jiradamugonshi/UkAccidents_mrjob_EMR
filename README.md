@@ -1,5 +1,9 @@
 # UkAccidents_mrjob_EMR
-Use Amazon EMR to create Hadoop cluster and run mrjob jobs in Python and Pig Latin scripts to explore “UK Car Accidents 2005-2015" dataset. 
+Use Amazon EMR to create Hadoop cluster and run Python mrjob jobs and Pig Latin scripts to explore “UK Car Accidents 2005-2015" dataset.
+
+## Introduction
+We will create a Hadoop cluster in Amazon EMR using mrjob commands executed within a local machine terminal (PowerShell in my case). Later, we will run scripts in Python/Pig Latin to map the car accidents coordinates to the areas of the UK and find the regions having the high count of accidents and casualities.
+For the Python script, we will use the Shapefiles (geospatial vector data format) to locate each car accident coordinates within its region in the UK.
 
 ## Environment
 Windows(local machine), AWS.
@@ -10,10 +14,8 @@ Hadoop, EMR, S3, MapReduce, CANOPY, Python 2.7, mrjob, Pig Latin.
 UK Car Accidents 2005-2015 (Data from the UK Department for Transport).
 You can get this data form https://www.kaggle.com/silicon99/dft-accident-data
 
-For the shapefiles (geospatial vector data format) of the UK postcode boundaries, you can upload them from http://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip
+For the shapefiles of the UK postcode boundaries, you can upload them from http://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip
 
-## Introduction
-We will create a Hadoop cluster in Amazon EMR running mrjob commands within a local machine terminal (PowerShell in my case). Later, we will run scripts in Python/Pig Latin to map the car accidents coordinates to the areas of the UK and find the regions having the high count of accidents and casualities.
 
 ## Steps
 1. Create a S3 bucket and upload the files into it. For the mrjob script and the configuration file (mrjob.conf), you can keep them in the local machine.
@@ -22,7 +24,7 @@ We will create a Hadoop cluster in Amazon EMR running mrjob commands within a lo
 ```
 mrjob create-cluster --max-hours-idle 1 --conf-path C:\Users\majdi\Desktop\DataSet\mrjob.conf 
 ```
-For further information about the cluster configuration on EMR, you can check mrjob documentation on https://mrjob.readthedocs.io/en/latest/guides/emr-quickstart.html#amazon-setup
+For further information about the cluster configuration on EMR, you can check mrjob documentation on https://mrjob.readthedocs.io/en/latest/guides/emr-opts.html
 ![](Images/image1.png)
 ![](Images/image2.png)
 
@@ -32,5 +34,7 @@ For further information about the cluster configuration on EMR, you can check mr
 ~~~~
 I highlight here the fact that we are using the shapefiles (.shp, .shx and .dbf) to map the car accidents coordinates to the Uk regions.
 
+4. After an almost one hour and half, we get the results.
 
+As an output we get something like this.
 
