@@ -22,5 +22,5 @@ We will create a Hadoop cluster in Amazon EMR using mrjob commands within a loca
 ```
 mrjob create-cluster --max-hours-idle 1 --conf-path C:\Users\majdi\Desktop\DataSet\mrjob.conf 
 ```
-
+![](Images/image1.png)
 
