@@ -19,6 +19,7 @@ For the shapefiles of the UK postcode boundaries, you can upload them from http:
 
 ## Hadoop cluster
 Master: 1 m3.xlarge
+
 Slaves: 3 r4.xlarge
 
 
@@ -54,4 +55,4 @@ As an output we get something like the following where we see the area code, the
 6. I also runned a Pig Latin script on the same Hadoop cluster created earlier. The purpose was to find the regions in the UK having the high count of accidents and casualities. You can find the results in the *Output* zipped file.
 
 ## Conclusion
-It was a tremendous effort to get all this done and I was pleased to see the results. You can also check my [Kaggle Notebook](https://www.kaggle.com/msaghrouni/exploration-and-visualization-using-shapefiles)
+It was a tremendous effort to get all this done and I was pleased by the results. You can also check my [Kaggle Notebook](https://www.kaggle.com/msaghrouni/exploration-and-visualization-using-shapefiles)
