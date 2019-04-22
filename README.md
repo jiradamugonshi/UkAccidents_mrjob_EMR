@@ -47,7 +47,11 @@ As an output we get something like the following where we see the area code, the
 
 ![](Images/image4.png)
 
-5. After some formatting to the outputs to get rid of the brackets and add comas, we get a single csv file. We will use this file to create a heatmap for the accidents count by region.
+5. After some formatting to the outputs to get rid of the brackets and add comas, we get a single csv file. We will use this file to create a heatmap for the accidents count by region. The python script *UseBasemap.py* used to create the heatmap was runned locally and it was heavily inspired from this [blog](https://www.datadependence.com/2016/06/creating-map-visualisations-in-python/)
 
 ![](Images/uk_accidents.png)
 
+6. I also runned a Pig Latin script on the same Hadoop cluster created earlier. The purpose was to find the regions in the UK having the high count of accidents and casualities. You can find the results in the *Output* zipped file.
+
+## Conclusion
+It was a tremendous effort to get all this done and I was pleased to see the results. You can also check my [Kaggle Notebook](https://www.kaggle.com/msaghrouni/exploration-and-visualization-using-shapefiles)
