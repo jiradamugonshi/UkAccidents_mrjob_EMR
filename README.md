@@ -9,13 +9,17 @@ For the Python script, we will use the **Shapefiles (geospatial vector data form
 ## Environment
 Windows(local machine), AWS.
 ## Technologies
-Hadoop, EMR, S3, MapReduce, CANOPY, Python 2.7, mrjob, Pig Latin.
+Hadoop, EMR, S3, MapReduce, Canopy(Enthought), Python 2.7, mrjob, Pig Latin.
 
 ## Dataset
 UK Car Accidents 2005-2015 (Data from the UK Department for Transport).
 You can get this data form https://www.kaggle.com/silicon99/dft-accident-data
 
 For the shapefiles of the UK postcode boundaries, you can upload them from http://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip
+
+## Hadoop cluster
+Master: 1 m3.xlarge
+Slaves: 3 r4.xlarge
 
 
 ## Steps
@@ -39,9 +43,11 @@ For further information about the cluster configuration on EMR, you can check mr
 
 ![](Images/image3.png)
 
-As an output we get something like this where we see the area code, the car accident coordinates (longitude, latitude) and the accidents count that occured in these coordinates.
+As an output we get something like the following where we see the area code, the car accident coordinates (longitude, latitude) and the accidents count that occured in these coordinates.
 
 ![](Images/image4.png)
 
-5. 
+5. After some formatting to the outputs to get rid of the brackets and add comas, we get a single csv file. We will use this file to create a heatmap for the accidents count by region.
+
+![](Images/uk_accidents.png)
 
