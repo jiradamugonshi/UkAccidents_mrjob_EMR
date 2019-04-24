@@ -54,7 +54,7 @@ As an output we got something like the following where we see the area code, the
 
 6. I also runned a Pig Latin script on the same Hadoop cluster created earlier. The purpose was to find the regions in the UK having the high count of accidents and casualities. You can find the results in the *Output* zipped file.
 
-PS: I added two MapReduce scripts in Java to figure out the age of drivers implicated in accidents (AOD.java) and to get the accidents count by day of the week (DOW.java). There is also a Hive script to get the drivers ages.
+**PS**: I added two MapReduce scripts in Java to figure out the age of drivers implicated in accidents (AOD.java) and to get the accidents count by day of the week (DOW.java). There is also a Hive script to get the drivers ages.
 
 ## Conclusion
 It was a tremendous effort to get all this done and I was pleased by the results. You can also check my [Kaggle Notebook](https://www.kaggle.com/msaghrouni/exploration-and-visualization-using-shapefiles)
