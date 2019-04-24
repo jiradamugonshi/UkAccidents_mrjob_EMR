@@ -1,15 +1,15 @@
 # UkAccidents_mrjob_EMR
-Use Amazon EMR to create Hadoop cluster and run Python mrjob jobs and Pig Latin scripts to explore “UK Car Accidents 2005-2015" dataset.
+Use Amazon EMR to create Hadoop cluster and run Python mrjob jobs and PigLatin scripts to explore “UK Car Accidents 2005-2015" dataset.
 
 ## Introduction
-We will create a Hadoop cluster in Amazon EMR using mrjob commands executed within a local machine terminal (PowerShell in my case). Later, we will run scripts in Python/Pig Latin to map the car accidents coordinates to the areas of the UK and find the regions having the high count of accidents and casualities.
+We will create a Hadoop cluster in Amazon EMR using mrjob commands executed within a local machine terminal (PowerShell in my case). Later, we will run scripts in Python/PigLatin to map the car accidents coordinates to the areas of the UK and find the regions having the high count of accidents and casualities.
 
 For the Python script, we will use the **Shapefiles (geospatial vector data format)** to locate each car accident coordinates within its region in the UK.
 
 ## Environment
 Windows(local machine), AWS.
 ## Technologies
-Hadoop, EMR, S3, MapReduce, Canopy(Enthought), Python 2.7, mrjob, Pig Latin.
+Hadoop, EMR, S3, MapReduce, Canopy(Enthought), Python 2.7, mrjob, PigLatin, Java and Hive QL.
 
 ## Dataset
 UK Car Accidents 2005-2015 (Data from the UK Department for Transport).
@@ -52,7 +52,7 @@ As an output we got something like the following where we see the area code, the
 
 ![](Images/uk_accidents.png)
 
-6. I also runned a Pig Latin script on the same Hadoop cluster created earlier. The purpose was to find the regions in the UK having the high count of accidents and casualities. You can find the results in the *Output* zipped file.
+6. I also runned a PigLatin script on the same Hadoop cluster created earlier. The purpose was to find the regions in the UK having the high count of accidents and casualities. You can find the results in the *Output* zipped file.
 
 **PS**: I added two MapReduce scripts in Java to figure out the age of drivers implicated in accidents (AOD.java) and to get the accidents count by day of the week (DOW.java). There is also a Hive script to get the drivers ages.
 
